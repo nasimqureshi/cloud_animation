@@ -16,11 +16,12 @@
 .sun {
     width: 120px;
     height: 120px;
-    background: rgba(255, 165, 0, 1);
+    background: rgba(255, 165, 0, .7);
     border-radius: 50%;
     position: absolute;
     top: 50px;
     left: -15px; 
+    animation: sun 8s ease-in-out;
 }
 .cloud1 {
     width: 200px;
@@ -82,4 +83,16 @@
        left: 1800px;
     }
     
+}
+@keyframes sun {
+    from {
+        top: 50px;
+        left: -15px;
+        background: rgba(255, 165, 0, .7);
+    }
+    to {
+        top: 15px;
+        left: 110%;
+        background: rgba(255, 165, 0, 1);
+    }
 }
